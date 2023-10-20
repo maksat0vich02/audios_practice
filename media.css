@@ -1,0 +1,31 @@
+@media(max-width:425px) {
+    .plyaer {
+        width: 400px;
+     }
+     .img-box img {
+        height: 508px;
+        width: 435px;
+        margin-left: 0px;
+        object-fit: cover; 
+     }
+}
+
+@media(max-width:375px) {
+    .plyaer audio {
+        margin-left: 15px;
+        width: 95%;
+     }      
+}
+
+@media(max-width:320px) {
+    .plyaer {
+        width: 380px;
+        margin-left: 38px;
+     }
+     .img-box img {
+        height: 508px;
+        width: 400px;
+        margin-left: 0px;
+        object-fit: cover; 
+     }
+}

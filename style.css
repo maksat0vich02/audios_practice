@@ -1,0 +1,55 @@
+ * {
+    padding: 0;
+    margin: 0;
+ }
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(58, 58, 58)
+ }
+
+ .plyaer {
+    position: absolute;
+    width: 500px;
+    background: transparent;
+    border-radius: 20px;
+    box-shadow: 0 50px 80px 30px rgba(0, 0, 0, 0.5) ;
+ }
+ .plyaer .img-box {
+    position: relative;
+    width: 100px;
+    height: 450px;
+ }
+ .img-box img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover; 
+    border-radius: 20px 20px 20px 20px ;
+    height: 508px;
+    width: 500px;
+    animation: img 3s ease-in-out ;
+ }
+ @keyframes img {
+   0%{
+      transform: translateY(-1000px)
+   }
+   50%{
+      transform: translateX(100px) rotate(50deg);
+   }
+   70%{
+      transform: translateX(-100px) rotateY(360deg);
+   }
+   100%{
+      transform: translateZ(100px) rotate3d(360deg)
+   }
+ }
+ .plyaer audio {
+    width: 90%;
+    margin-left: 25px;
+    transform: 1s;
+ }
+
+ 
